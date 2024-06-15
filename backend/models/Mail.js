@@ -26,6 +26,10 @@ const mailSchema = new mongoose.Schema({
       path: String,
     },
   ],
+  isDraft: {
+    type: Boolean,
+    default: false,
+  },
   scheduledAt: {
     type: Date,
     required: true,
